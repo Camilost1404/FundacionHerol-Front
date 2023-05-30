@@ -1,0 +1,122 @@
+.wallet_rechazado {
+    --bg-color_rechazado: #fcb2db;
+    --bg-color-light_rechazado: #ffe7f4;
+    --text-color-hover_rechazado: #020202;
+    --box-shadow-color_rechazado: rgba(252, 178, 184, 0.48);
+
+}
+
+/*Card compra con exito*/
+.container-card_rechazado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card_rechazado {
+    width: 220px;
+    height: 321px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.card_rechazado:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color_rechazado);
+}
+
+.card_rechazado:hover .overlay_rechazado {
+    transform: scale(3.5) translateZ(0);
+}
+
+.card_rechazado:hover .circle {
+    border-color: var(--bg-color-light_rechazado);
+    background: var(--bg-color_rechazadoo);
+}
+
+.card_rechazadoo:hover .circle:after {
+    background: var(--bg-color-light_rechazado);
+}
+
+.card_rechazadoo:hover p {
+    color: var(--text-color-hover_rechazado);
+    font-size: 35px;
+}
+
+.card_rechazado p {
+    font-size: 30px;
+    color: #4c5656;
+    margin-top: 30px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+}
+
+.circle_rechazado {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bg-color_rechazado);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+}
+
+.circle_rechazado:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--bg-color_rechazado);
+    border-radius: 50%;
+    top: 7px;
+    left: 7px;
+    transition: opacity 0.3s ease-out;
+}
+
+.circle_rechazado svg {
+    z-index: 10000;
+    transform: translateZ(0);
+}
+
+.overlay_rechazado {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color_rechazado);
+    top: 70px;
+    left: 50px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+}
+
+/*Pc*/
+
+@media (min-width: 800px) {
+    .card_rechazado {
+        width: 577px;
+        height: 532px;
+    }
+
+    .overlay_rechazado {
+        top: 170px;
+        left: 220px;
+    }
+}

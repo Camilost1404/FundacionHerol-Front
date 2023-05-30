@@ -1,0 +1,136 @@
+.sidebar {
+    max-width: 500px;
+    width: 210px;
+    /* height: 100vh; */
+    /* min-height: 800px; */
+    background-color: var(--verde-oscuro);
+    border-right: 1px solid lightgray;
+    overflow: auto;
+    position: relative;
+    transition: max-width 1s;
+    overflow: hidden;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 5px solid var(--blanco);
+    gap: 10px;
+}
+
+.sidebar-header img {
+    width: 80px;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--textColor);
+}
+
+.sidebar-header h4 strong {
+    font-weight: 800;
+}
+
+.colleps-btn {
+    background-color: transparent;
+    position: absolute;
+    /* bottom: 40px; */
+    right: 30px;
+    border: none;
+    font-size: 26px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    padding: 12px;
+    color: var(--blanco);
+    transition: all 1s ease;
+}
+
+.sidebar-navlink {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navlink-item a.active {
+    background-color: var(--verde-medio);
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.navlink-item a {
+    text-decoration: none;
+    padding: 20px 20px;
+    color: var(--textColor);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sidebar.shrink_sidebar .sidebar-header h4 {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.sidebar.shrink_sidebar .sidebar-navlink .navlink-item a {
+    justify-content: center;
+    font-size: 30px;
+    transition: all 1s ease;
+}
+
+.navlink-item a:hover {
+    background-color: var(--verde-medio);
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.sidebar.shrink_sidebar {
+    max-width: 120px;
+    transition: max-width 1s;
+}
+
+.sidebar.shrink_sidebar .colleps-btn {
+    transform: rotate(90deg);
+}
+
+.btn-logout {
+    display: block;
+    margin: 20px auto;
+    color: var(--oscuro);
+    font-weight: 500;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+}
+
+.btn-logout {
+    background-color: var(--amarillo);
+}
+
+.btn-logout:hover {
+    background-color: var(--amarillo);
+    text-decoration: none;
+    color: var(--oscuro);
+    font-weight: 600
+}
+
+.btn-logout:active {
+    background-color: var(--amarillo) !important;
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,13 @@
+.carousel-item img {
+    object-fit: cover;
+    width: 100vw;
+    height: 600px;
+    margin: 0;
+}
+
+.container-sm {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    padding: 0;
+}

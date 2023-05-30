@@ -1,0 +1,142 @@
+.section-diagonal {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.section-1 {
+    position: relative;
+    height: 400px;
+    background-color: var(--blanco4);
+}
+
+.section-1::after {
+    position: absolute;
+    content: " ";
+    transform: rotate(-7deg);
+    transform-origin: 0% 0;
+    bottom: -400px;
+    left: -25%;
+    /* Ajuste para extender el fondo */
+    width: 150%;
+    /* Ajuste para extender el fondo */
+    height: 320px;
+    background: var(--blanco2);
+}
+
+.sections {
+    height: 250px;
+    z-index: 1;
+}
+
+.sections:nth-of-type(1) {
+    background-color: var(--blanco2);
+}
+
+.sections:nth-of-type(2) {
+    background-color: var(--blanco3);
+}
+
+.sections-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    z-index: 2;
+}
+
+
+.sections-tittle {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sections-p {
+    font-size: 20px;
+}
+
+.sections-tittle,
+.sections-p {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .section-diagonal {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-1 {
+        height: 460px;
+    }
+
+    .section-1::after {
+        left: -25%;
+        /* Ajuste para extender el fondo */
+        width: 150%;
+        /* Ajuste para extender el fondo */
+        bottom: -352px;
+    }
+
+    .sections {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-1 {
+        height: 380px;
+    }
+
+    .section-1::after {
+        bottom: -425px;
+        left: -25%;
+        /* Ajuste para extender el fondo */
+        width: 150%;
+        /* Ajuste para extender el fondo */
+        height: 415px;
+    }
+
+    .sections {
+        height: 300px;
+    }
+}
+
+/* Estilos del botón */
+.btnn-apoya {
+    width: 180px;
+    padding: 1em 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnn-apoya:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.btnn-apoya:active {
+    transform: translateY(-1px);
+}

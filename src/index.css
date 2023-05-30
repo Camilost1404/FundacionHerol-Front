@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--verde-oscuro: #046731;
+	--verde-medio: #049341;
+	--verde-claro: #38aa2d;
+	--rojo: #f1080b;
+	--amarillo: #fcea0e;
+	--blanco: #fefefe;
+	--oscuro: #000000;
+	--textColor: #eee;
+	--blanco2: #c9f1c8;
+    --blanco3: #98f197;
+    --blanco4: #36a151;
+	--dark-grey: #151922;
+    --light-grey: #ccc;
+    --med-grey: #ddd;
+    --active: #4a4a4a;
+    --highlight: #ffce06;
+    --link-underline: #ffce06;
+}

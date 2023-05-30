@@ -1,0 +1,170 @@
+.formu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*voluntarios estilos form*/
+
+.container-form_voluntarios {
+    width: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    /*efecto de sombra*/
+    -webkit-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+}
+
+.container-form_voluntarios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+
+}
+
+.form-control_voluntarios {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#experienciaVoluntario {
+    resize: none;
+}
+
+.formu-container form .mb-3 label {
+    display: block;
+    text-align: left;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #0069d9;
+}
+
+@media (max-width: 600px) {
+    .container-form_voluntarios {
+        width: 100%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/*Apadrinamiento estilos form*/
+
+.container-form_apadrinamiento {
+    width: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    /*efecto de sombra*/
+    -webkit-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+}
+
+.container-form_apadrinamiento h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*imagen*/
+.img-form_apadrinamiento {
+    margin-bottom: 1rem;
+}
+
+.img-form_apadrinamiento div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.img-form_apadrinamiento img {
+    width: 400px !important;
+    height: 500px !important;
+    margin-right: 10px;
+}
+
+.img-form_apadrinamiento span {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .img-form_apadrinamiento img {
+        max-width: 100%;
+    }
+}
+
+
+/*continua formulario*/
+.form-label {
+    font-weight: bold;
+
+}
+
+.form-control_apadrinamiento {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#experienciaVoluntario {
+    resize: none;
+}
+
+.formu-container form .mb-3 label {
+    display: block;
+    text-align: left;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #0069d9;
+}
+
+@media (max-width: 600px) {
+    .container-form_apadrinamiento {
+        width: 100%;
+        padding: 10px;
+    }
+}

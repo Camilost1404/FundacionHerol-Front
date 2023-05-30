@@ -1,0 +1,121 @@
+/* Donar estilos form*/
+
+.container-form_donar {
+    width: 100vh;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-bottom: 50px;
+    /*efecto de sombra*/
+    -webkit-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+    box-shadow: -5px 1px 29px -8px rgba(0, 0, 0, 1);
+}
+
+.container-form_donar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+
+}
+
+.form-control_donar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formu-container form .mb-3 label {
+    display: block;
+    text-align: left;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #0069d9;
+}
+
+.btn-confirm-donar {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.monto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monto input {
+    border-radius: 5px 0 0 5px;
+}
+
+.moneda {
+    border: 1px solid black;
+    padding: 0.6rem;
+    margin-bottom: 10.5px;
+    border-radius: 0 5px 5px 0 !important;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border: 2px solid #a7a6a6;
+}
+
+@media (max-width: 600px) {
+    .container-form_donar {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container-form_donar {
+        width: 100%;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* animación alert */
+
+/* Estilos de la animación */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeInDown {
+    animation-name: animate__fadeInDown;
+}
+
+@keyframes animate__fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

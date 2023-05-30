@@ -1,0 +1,223 @@
+.header-client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background: rgb(4, 103, 49);
+    background: linear-gradient(90deg, rgba(4, 103, 49, 1) 48%, rgba(56, 170, 45, 1) 63%, rgba(252, 234, 14, 1) 100%);
+    color: var(--textColor);
+    z-index: 999;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-client a {
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.nav-client a:hover {
+    color: var(--amarillo);
+}
+
+.header-client .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+.nav-client {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .header-client .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-client {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--verde-oscuro);
+        transition: 1s;
+        z-index: 999;
+    }
+
+    .header-client .responsive_nav {
+        transform: translateY(100vh);
+    }
+
+    .nav-client .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-client a {
+        font-size: 1.5rem;
+    }
+}
+
+/*Boton donar*/
+.btn-donar {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-donar:hover,
+.btn-donar:focus {
+    color: #fff !important;
+    outline: 0;
+    border: 2px solid #FF0000;
+}
+
+
+/* Boton Donar Hover y corazon latiendo */
+.bttn-anima {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.bttn-anima:hover {
+    box-shadow: 0 0 40px 40px #FF0000 inset;
+    color: #FFFFFF;
+}
+
+
+.heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+    font-size: 30px;
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}

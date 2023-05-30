@@ -1,0 +1,125 @@
+.titulo {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.info-ubicacion {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.botones-info {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-info-ubicacion {
+    box-shadow: inset 0px 1px 0px 0px #caefab;
+    background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+    background-color: #77d42a;
+    border-radius: 6px;
+    border: 1px solid #268a16;
+    cursor: pointer;
+    color: var(--blanco);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 39px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #aade7c;
+    margin-left: 1rem;
+
+}
+
+.boton-info-ubicacion:hover {
+    background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+    background-color: #5cb811;
+}
+
+.boton-info-ubicacion:active {
+    position: relative;
+    top: 1px;
+}
+
+.situacion {
+    visibility: visible;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.situacion p {
+    text-align: justify;
+    font-size: medium;
+}
+
+.beneficiados {
+    visibility: visible;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.cifras {
+    display: flex;
+}
+
+.cifras h3 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cifras p {
+    font-size: medium;
+}
+
+.comunidades {
+    margin-right: 1rem;
+}
+
+.niñosapadrinados {
+    margin-left: 1rem;
+}
+
+.gmap_canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.gmap_iframe {
+    width: 85%;
+    height: 500px;
+    filter: brightness(70%);
+    border-radius: 19px 19px 19px 19px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.gmap_iframe:hover {
+    filter: none;
+}
+
+.mapaimg {
+    height: 400px;
+}
+
+@media (max-width:1300px) {
+    .info-ubicacion {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
